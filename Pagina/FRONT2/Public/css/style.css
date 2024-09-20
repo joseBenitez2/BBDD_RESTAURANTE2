@@ -1,0 +1,205 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-image: url(../imagenes/Fondo\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*barra en la que se encuentra el logo y el titulo*/
+.BarraNav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    color: #000;
+}
+
+/*Texto que aparece en la parte superior como titulo*/
+.Titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 38%;
+    color: #000;
+}
+
+/*Logo del restaurante*/
+.logo {
+    width: 90px;
+}
+/* Nombre que pone restaurante */
+.Nombre
+{
+    top: 40px;
+    color: #000000cb;
+}
+/* Barra de navegacion */
+nav
+{
+    position: absolute;
+    margin-left: 95%;
+}
+
+.logo2
+{
+    width: 60px;
+
+}
+
+/*Texto que aparece en la parte superior del formulario*/
+.H2 {
+    align-items: center;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000d2;
+
+}
+h1{
+    margin-left: 1%;
+}
+
+/* contenedor de el formulario entero */
+.inicio {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* formulario de inicio de sesion en general */
+.formulario {
+    box-shadow: 2px 5px 2px #00000050;
+    border: 3px solid #000000ce;
+    border-radius: 20%;
+    padding: 50px;
+}
+
+/* Texto del formulario de inicio de sesion */
+.label {
+
+    color: #000000bd;
+    font-size: 20px;
+}
+
+
+/* boton de inicio de sesion */
+.boton {
+    color: #000;
+    background-color:cornflowerblue;
+}
+
+/* boton de la parte de crear orden */
+.boton2 {
+    color: white;
+    background-color:#00000046;
+    padding: 20px 15px;
+    border-radius: 50%;
+    margin-left: 2%;
+    box-shadow: 2px 5px 2px #00000050;
+}
+
+/* contenedor de la tabla de ordenes */
+.ordenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+
+form
+{
+    border: 5px solid rgb(30, 196, 251);
+    border-radius: 10%;
+    padding: 5%;
+}
+
+.tabla
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+.label
+{
+    font-size: 30px;
+}
+
+.dato
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+.rellenar
+{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Boton de enviar */
+
+#Envio
+{
+    margin-left: 90%;
+}
+
+/* borde de las tabla para ingresar ordenes */
+td,
+th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* contenedor de la tabla donde se guardan las ordenes */
+
+.datos
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+/* Css de la tabla  */
+.tabla2
+{
+    width: 80%; 
+    height: 200px; 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+}
+
+/* Contenedor de la tabla con la info de las ordenes */
+
+.tablaD
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    margin-top: 5%;
+}

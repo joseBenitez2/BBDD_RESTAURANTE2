@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ordenes").hide();
+            $(".boton2").click(function () {
+                $(".ordenes").fadeIn(500);
+            })
+
+            $(".G").click(function () {
+                $(".ordenes").fadeOut();
+            })
+        })
+    </script>
+</head>
+<header>
+    <div class="BarraNav">
+        <a href="../pagina/index.html"> <img class="logo2" src="../imagenes/plato.png" alt="logo Restaurante"></a>
+        <h1 class="Nombre">RESTAURANTE</h1>
+        <nav>
+            <a href="../pagina/Pedidos.html"><img class="logo" src="" alt=""></a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <br><br><br>
+    <button class="boton2">Crear orden</button>
+    <br><br>
+    <div class="ordenes">
+        <form action="http://localhost:3000/insertar" method="post">
+
+            <h2>Ingrese la orden del cliente</h2> <br><br>
+
+            <label class="label">Orden</label><br><br>
+            <input type="text"><br><br>
+
+            <label class="label">Fecha</label><br><br>
+            <input type="date"><br><br>
+
+            <label class="label">Hora de cobro</label><br><br>
+            <input type="time"><br><br>
+
+            <label class="label">Mesa</label><br><br>
+            <input type="number"><br><br>
+
+            <label class="label">Propina</label><br><br>
+            <input type="text"><br><br>
+
+            <label class="label">FK_Id_Mesero</label><br><br>
+            <input type="number"><br><br>
+
+            <label class="label">FK_Id_Cliente</label><br><br>
+            <input type="number"><br><br>
+
+            <input type="submit" name="Enviar" id="Envio" value="Enviar">
+        </form>
+        <!-- Fac_Orden, Fac_Fecha, Fac_HoraCobro, Fac_Mesa, Fac_Propina, FK_Id_Mesero, FK_Id_Cliente -->
+    </div>
+</body>
+
+</html>

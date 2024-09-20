@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ordenes").hide();
+            $(".boton2").click(function () {
+                $(".ordenes").fadeIn(500);
+            })
+
+            $(".G").click(function () {
+                $(".ordenes").fadeOut();
+            })
+
+
+            $(".Pro").click(function () {
+
+            $('<tr><td colspan="3" class="rellenar"><select name="Pro_Nombre" id="Pro_Nombre"><option>Arrachera del Chef</option><option>Atún Encostrado</option><option>Brochetas Hawaiianas</option><option>Café americano</option><option>Camarones al Coco</option><option>Camarones Momia</option><option>Capuccino</option><option>Cítricos</option><option>Corona</option><option>Del Cheff</option><option>Del Huerto</option><option>Ensalada Prímula</option><option>Esfera del Cheff</option><option>Espárragos Envueltos</option><option>Espresso</option><option>Frutos del Bosque</option><option>Indio</option><option>Italiana</option><option>Lasagna Ratatouille</option><option>Limonada</option><option>Margarita</option><option>Margret de Pato</option><option>Mejillones Horneados</option><option>Mexicana</option><option>Minerva</option><option>Modelo</option><option>Naranjada</option><option>Pacifico</option><option>Pan de Elote</option><option>Panela a la Leña</option><option>Pannacotta Vainilla y Café</option><option>Pasta 4 Quesos</option><option>Pasta Alfredo</option><option>Pasta de Tomate Deshidratado</option><option>Pay de Temporada</option><option>Pera Rostizada</option><option>Pesto & Camarón</option><option>Pizza Prímula</option><option>Pollo al Pastor</option><option>Pollo Silvestre</option><option>Portobello Confitado</option><option>Prímula Espresso</option><option>Quesadillas Gobernador</option><option>Refresco</option><option>Rollos Prímula</option><option>Salmón</option><option>Salmón Ahumado</option><option>Salmón al Pesto</option><option>Strudel de Manzana</option><option>Tacos Arrachera</option><option>Tacos Capeados</option><option>Tártara de atún/salmón Frescto</option><option>Te helado</option><option>Tecate</option><option>Tiramisú</option><option>Tisana</option><option>Tropical</option><option>Vacío</option><option>Victoria</option><option>Vino 1</option><option>Vino 10</option><option>Vino 2</option><option>Vino 3</option><option>Vino 4</option><option>Vino 5</option><option>Vino 6</option><option>Vino 7</option><option>Vino 8</option><option>Vino 9</option></select></td></tr>').insertAfter('.rellenar2');
+
+
+            });
+
+        })
+    </script>
+</head>
+<header>
+    <div class="BarraNav">
+        <a href="../pagina/index.html"> <img class="logo2" src="../imagenes/plato.png" alt="logo Restaurante"></a>
+        <h1 class="Nombre">RESTAURANTE</h1>
+        <nav>
+            <a href="../pagina/Pedidos.html"><img class="logo" src="" alt=""></a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <br><br><br>
+    <button class="boton2">Crear orden</button>
+    <br><br>
+    <div class="ordenes">
+        <form action="http://localhost:3000/insertar_F" method="post">
+
+            <h2>Ingrese la orden del cliente</h2> <br><br>
+
+            <table class="tabla">
+                <tr>
+                    <td><label class="label">Número Orden</label></td>
+                    <td><label class="label">Mesa</label></td>
+                    <td><label class="label">Mesero</label></td>
+
+                </tr>
+                <tr>
+                    <td class="rellenar"><input type="number" class="dato" name="Fac_Orden"></td>
+                    <td class="rellenar"><input type="number" class="dato" name="Fac_Mesa"></td>
+                    <td class="rellenar"><input type="number" class="dato" name="FK_Id_Mesero"></td>
+
+                </tr>
+            
+        
+
+            <tr class="Pro">
+                <td colspan="3"><label class="label">Pedido</label></td>
+            </tr>
+            <tr class="rellenar2"><td colspan="3" class="rellenar">
+                <select  name="Pro_Nombre" id="Pro_Nombre">
+                    <option>Arrachera del Chef</option>
+                    <option>Atún Encostrado</option>
+                    <option>Brochetas Hawaiianas</option>
+                    <option>Café americano</option>
+                    <option>Camarones al Coco</option>
+                    <option>Camarones Momia</option>
+                    <option>Capuccino</option>
+                    <option>Cítricos</option>
+                    <option>Corona</option>
+                    <option>Del Cheff</option>
+                    <option>Del Huerto</option>
+                    <option>Ensalada Prímula</option>
+                    <option>Esfera del Cheff</option>
+                    <option>Espárragos Envueltos</option>
+                    <option>Espresso</option>
+                    <option>Frutos del Bosque</option>
+                    <option>Indio</option>
+                    <option>Italiana</option>
+                    <option>Lasagna Ratatouille</option>
+                    <option>Limonada</option>
+                    <option>Margarita</option>
+                    <option>Margret de Pato</option>
+                    <option>Mejillones Horneados</option>
+                    <option>Mexicana</option>
+                    <option>Minerva</option>
+                    <option>Modelo</option>
+                    <option>Naranjada</option>
+                    <option>Pacifico</option>
+                    <option>Pan de Elote</option>
+                    <option>Panela a la Leña</option>
+                    <option>Pannacotta Vainilla y Café</option>
+                    <option>Pasta 4 Quesos</option>
+                    <option>Pasta Alfredo</option>
+                    <option>Pasta de Tomate Deshidratado</option>
+                    <option>Pay de Temporada</option>
+                    <option>Pera Rostizada</option>
+                    <option>Pesto & Camarón</option>
+                    <option>Pizza Prímula</option>
+                    <option>Pollo al Pastor</option>
+                    <option>Pollo Silvestre</option>
+                    <option>Portobello Confitado</option>
+                    <option>Prímula Espresso</option>
+                    <option>Quesadillas Gobernador</option>
+                    <option>Refresco</option>
+                    <option>Rollos Prímula</option>
+                    <option>Salmón</option>
+                    <option>Salmón Ahumado</option>
+                    <option>Salmón al Pesto</option>
+                    <option>Strudel de Manzana</option>
+                    <option>Tacos Arrachera</option>
+                    <option>Tacos Capeados</option>
+                    <option>Tártara de atún/salmón Frescto</option>
+                    <option>Te helado</option>
+                    <option>Tecate</option>
+                    <option>Tiramisú</option>
+                    <option>Tisana</option>
+                    <option>Tropical</option>
+                    <option>Vacío</option>
+                    <option>Victoria</option>
+                    <option>Vino 1</option>
+                    <option>Vino 10</option>
+                    <option>Vino 2</option>
+                    <option>Vino 3</option>
+                    <option>Vino 4</option>
+                    <option>Vino 5</option>
+                    <option>Vino 6</option>
+                    <option>Vino 7</option>
+                    <option>Vino 8</option>
+                    <option>Vino 9</option>
+                </select>
+                
+            </td> </tr>
+           
+        </form>
+        
+        </table>
+        <br><br>
+        <input type="submit" name="Enviar" id="Enviar" value="Enviar">
+
+    </div>
+</body>
+
+</html>
