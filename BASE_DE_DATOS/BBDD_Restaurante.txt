@@ -164,16 +164,14 @@ IGNORE 1 LINES
 
 
 
-select  
- Factura.Fac_Orden as Orden,
- Factura.Fac_Mesa as Mesa, 
- Mesero.Mes_Nombre as Mesero, 
- Producto.Pro_Nombre as Producto
+SELECT  
+    Factura.Fac_Orden AS Orden,
+    Factura.Fac_Mesa AS Mesa, 
+    Mesero.Mes_Nombre AS Mesero, 
+    Producto.Pro_Nombre AS Producto
 FROM 
- Factura
+    Factura
 INNER JOIN Mesero ON Factura.FK_Id_Mesero = Mesero.Id_Mesero  
-INNER JOIN Factura_Producto ON Factura.Fac_Orden = Factura_Producto.FK_Id_Producto 
+INNER JOIN Factura_Producto ON Factura.Id_Factura = Factura_Producto.FK_Id_Factura
 INNER JOIN Producto ON Factura_Producto.FK_Id_Producto = Producto.Id_Producto
-WHERE Factura_Producto.FK_Id_Factura=2500
-
-SELECT * FROM Producto ;
+WHERE Factura_Producto.FK_Id_Factura = 32775;
