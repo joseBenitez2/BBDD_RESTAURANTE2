@@ -174,4 +174,4 @@ FROM
 INNER JOIN Mesero ON Factura.FK_Id_Mesero = Mesero.Id_Mesero  
 INNER JOIN Factura_Producto ON Factura.Id_Factura = Factura_Producto.FK_Id_Factura
 INNER JOIN Producto ON Factura_Producto.FK_Id_Producto = Producto.Id_Producto
-WHERE Factura_Producto.FK_Id_Factura = 32775;
+WHERE Factura_Producto.FK_Id_Factura = 1;
