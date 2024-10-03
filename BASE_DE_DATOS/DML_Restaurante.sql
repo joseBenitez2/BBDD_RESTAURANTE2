@@ -95,3 +95,14 @@ IGNORE 1 LINES
 (FK_Id_Factura, FK_Id_Producto);
 
 
+SELECT  
+    Factura.Fac_Orden AS Orden,
+    Factura.Fac_Mesa AS Mesa, 
+    Mesero.Mes_Nombre AS Mesero, 
+    Producto.Pro_Nombre AS Producto
+FROM 
+    Factura
+INNER JOIN Mesero ON Factura.FK_Id_Mesero = Mesero.Id_Mesero  
+INNER JOIN Factura_Producto ON Factura.Id_Factura = Factura_Producto.FK_Id_Factura
+INNER JOIN Producto ON Factura_Producto.FK_Id_Producto = Producto.Id_Producto
+WHERE Factura_Producto.FK_Id_Factura = 1;
